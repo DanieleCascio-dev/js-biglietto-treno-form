@@ -29,14 +29,14 @@ search.addEventListener("click", function () {
     console.log(finalPrice);
     finalPrice = finalPrice.toFixed(2);
     basePrice = basePrice.toFixed(2);
-    messagge.innerHTML = `Il tuo biglietto costava ${basePrice}€ e ora costa ${finalPrice}€, il tuo sconto è del 40% poichè sei un over 65, buon viaggio!`;
+    messagge.innerHTML = `${name} il tuo biglietto costava ${basePrice}€ e ora costa ${finalPrice}€, il tuo sconto è del 40% poichè sei un over 65, buon viaggio!`;
     //Minorenne
   } else if (userAge < 18) {
     finalPrice = basePrice * 0.8;
     console.log(finalPrice);
     finalPrice = finalPrice.toFixed(2);
     basePrice = basePrice.toFixed(2);
-    messagge.innerHTML = `Il tuo biglietto costava ${basePrice}€ e ora costa ${finalPrice}€, il tuo sconto è del 20% poichè sei minorenne, buon viaggio!`;
+    messagge.innerHTML = `${name} il tuo biglietto costava ${basePrice}€ e ora costa ${finalPrice}€, il tuo sconto è del 20% poichè sei minorenne, buon viaggio!`;
   }
   //Tra 18 e 65
   else {
@@ -44,6 +44,6 @@ search.addEventListener("click", function () {
     console.log(finalPrice);
     finalPrice = finalPrice.toFixed(2);
     basePrice = basePrice.toFixed(2);
-    messagge.innerHTML = `Il tuo biglietto costa ${finalPrice}€, buon viaggio!`;
+    messagge.innerHTML = `${name} il tuo biglietto costa ${finalPrice}€, buon viaggio!`;
   }
 });
