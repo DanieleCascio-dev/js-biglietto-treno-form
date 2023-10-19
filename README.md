@@ -30,7 +30,7 @@ Scrivere un programma che chieda all’utente:
 2. Inserisco in una variabile l'età del passeggero inseirta dall'utente:
    const userAge = parseInt(getElementById().innerHtml);
 
-**Logica**
+**Logica e output**
 
 1. Inizializzo il price moltiplicando la distanza scelta dall'utente per 0.21:
    let basePrice = userKm \* 0.21;
@@ -50,5 +50,3 @@ ALTRIMENTI
 finalPrice = basePrice;
 
 4. Preparo il messaggio finale
-
-**output**

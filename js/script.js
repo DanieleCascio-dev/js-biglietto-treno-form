@@ -15,16 +15,26 @@ search.addEventListener("click", function () {
   console.log(basePrice);
   //Prezzo finale
   let finalPrice;
-
+  //messagge
+  let messagge = document.querySelector(".ticket");
   //Condizione sconto
   if (userAge > 65) {
     finalPrice = basePrice * 0.6;
     console.log(finalPrice);
+    finalPrice = finalPrice.toFixed(2);
+    basePrice = basePrice.toFixed(2);
+    messagge.innerHTML = `Il tuo biglietto costava ${basePrice}€ e ora costa ${finalPrice}€, il tuo sconto è del 40% poichè sei un over 65, buon viaggio!`;
   } else if (userAge < 18) {
     finalPrice = basePrice * 0.8;
     console.log(finalPrice);
+    finalPrice = finalPrice.toFixed(2);
+    basePrice = basePrice.toFixed(2);
+    messagge.innerHTML = `Il tuo biglietto costava ${basePrice}€ e ora costa ${finalPrice}€, il tuo sconto è del 20% poichè sei minorenne, buon viaggio!`;
   } else {
     finalPrice = basePrice;
     console.log(finalPrice);
+    finalPrice = finalPrice.toFixed(2);
+    basePrice = basePrice.toFixed(2);
+    messagge.innerHTML = `Il tuo biglietto costa ${finalPrice}€, buon viaggio!`;
   }
 });
