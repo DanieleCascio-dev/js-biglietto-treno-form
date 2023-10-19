@@ -50,3 +50,6 @@ ALTRIMENTI
 finalPrice = basePrice;
 
 4. Preparo il messaggio finale
+
+**Estetica**
+Preparo una pagina html con stile
