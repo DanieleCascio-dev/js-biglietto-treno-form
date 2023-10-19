@@ -3,45 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Super Treno</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <section class="title">
-        <h1>
-          Benvenuto! Grazie per aver scelto la nostra agenzia di trasporti.
-        </h1>
-        <h2>
-          Ti preghiamo di inerire i dati richiesti per trovare il biglietto più
-          adatte a te!
-        </h2>
-      </section>
-      <!-- Input section -->
-      <section class="input-section">
-        <div class="flex input-container">
-          <div class="input">
-            <label for="name">Nome e cognome</label>
-            <input type="text" id="name" />
+    <div class="wrapper">
+      <div class="container">
+        <section class="title">
+          <h1>
+            Benvenuto! Grazie per aver scelto la nostra agenzia di trasporti.
+          </h1>
+        </section>
+        <!-- Input section -->
+        <section class="input-section">
+          <h2>
+            Ti preghiamo di inerire i dati richiesti per trovare il biglietto
+            più adatte a te!
+          </h2>
+          <div class="flex input-container">
+            <div class="input">
+              <label for="name">Nome e cognome</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="input">
+              <label for="km">Numero di kilometri</label>
+              <input type="text" id="km" />
+            </div>
+            <div class="input">
+              <label for="age">Inserisci l'età del passeggero</label>
+              <input type="text" id="age" />
+            </div>
           </div>
-          <div class="input">
-            <label for="km">Inserisci i numero di kilometri</label>
-            <input type="text" id="km" />
+          <div class="flex input-button">
+            <button id="search">Cerca biglietto</button>
+            <button id="delete">Annulla</button>
           </div>
-          <div class="input">
-            <label for="age">Inserisci l'età del passeggero</label>
-            <input type="text" id="age" />
-          </div>
-        </div>
-        <button id="search">Cerca biglietto</button>
-      </section>
-      <!-- Input section -->
+        </section>
+        <!-- Input section -->
 
+        <!-- Ticket section -->
+        <h2>Ciao utente!</h2>
+        <p class="ticket"></p>
+      </div>
       <!-- Ticket section -->
-      <h2>Ciao utente!</h2>
-      <p class="ticket"></p>
     </div>
-    <!-- Ticket section -->
     <script src="js/script.js"></script>
   </body>
 </html>
