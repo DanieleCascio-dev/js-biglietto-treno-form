@@ -22,7 +22,7 @@ Scrivere un programma che chieda all’utente:
 
 **JS**
 
-**Raccolta dati**
+**Raccolta dati al click**
 
 1. inserisco in una variabile i dati dei km inseriti dall'utente:
    const userKm = parseInt(getElementById().innerHtml);
