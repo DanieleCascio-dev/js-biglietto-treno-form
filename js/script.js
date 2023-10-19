@@ -1,6 +1,9 @@
 // Raccolta dati al click
 const search = document.getElementById("search");
 search.addEventListener("click", function () {
+  //Nome e cognome
+  const name = document.getElementById("name").value;
+  console.log(name);
   //Km inseriti
   const userKm = parseInt(document.getElementById("km").value);
   console.log(userKm, typeof userKm);
@@ -17,6 +20,7 @@ search.addEventListener("click", function () {
   let finalPrice;
   //messagge
   let messagge = document.querySelector(".ticket");
+
   //Condizione sconto e Output
 
   //Over 65

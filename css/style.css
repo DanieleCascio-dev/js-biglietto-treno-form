@@ -1,0 +1,40 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common */
+body {
+  background-color: lightskyblue;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  background-color: lightblue;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Title section */
+
+.title {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* input section */
+.input-section {
+  background-color: #fff;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+/* Button */

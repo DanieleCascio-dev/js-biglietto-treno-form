@@ -7,18 +7,41 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="input">
-      <label for="km">Inserisci i numero di kilometri</label>
-      <input type="text" id="km" />
-    </div>
-    <div class="input">
-      <label for="age">Inserisci l'età del passeggero</label>
-      <input type="text" id="age" />
-    </div>
-    <button id="search">Cerca biglietto</button>
+    <div class="container">
+      <section class="title">
+        <h1>
+          Benvenuto! Grazie per aver scelto la nostra agenzia di trasporti.
+        </h1>
+        <h2>
+          Ti preghiamo di inerire i dati richiesti per trovare il biglietto più
+          adatte a te!
+        </h2>
+      </section>
+      <!-- Input section -->
+      <section class="input-section">
+        <div class="flex input-container">
+          <div class="input">
+            <label for="name">Nome e cognome</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="input">
+            <label for="km">Inserisci i numero di kilometri</label>
+            <input type="text" id="km" />
+          </div>
+          <div class="input">
+            <label for="age">Inserisci l'età del passeggero</label>
+            <input type="text" id="age" />
+          </div>
+        </div>
+        <button id="search">Cerca biglietto</button>
+      </section>
+      <!-- Input section -->
 
-    <h2>Ciao utente!</h2>
-    <p class="ticket"></p>
+      <!-- Ticket section -->
+      <h2>Ciao utente!</h2>
+      <p class="ticket"></p>
+    </div>
+    <!-- Ticket section -->
     <script src="js/script.js"></script>
   </body>
 </html>
