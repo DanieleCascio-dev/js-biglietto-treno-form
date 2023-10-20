@@ -69,6 +69,12 @@ h1 {
   text-align: center;
 }
 
+#km:focus-visible,
+#age:focus-visible,
+#name:focus-visible {
+  outline: none;
+}
+
 .input input {
   border: none;
   border-bottom: 1px solid #5d4baa;
